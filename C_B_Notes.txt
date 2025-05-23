@@ -1,0 +1,17 @@
+
+
+1. int, str, float   explian
+
+2. variables
+
+3. set, tuple, list, dictionary
+
+4. if elif else
+
+5. loop:- for, while
+
+6. functions
+
+7. recursion
+
+8. File I/O
