@@ -495,6 +495,7 @@ User defined functions are those which are defined by user
 
 
 
+import utils.session
 """
 
 factorial(0) = 1
