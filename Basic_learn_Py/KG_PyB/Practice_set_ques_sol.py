@@ -23,6 +23,76 @@
 
 
 
+# #WAP to print all even number
+
+# for i in range(1,10):
+#     if (i%2)==0:
+#         print(i)
+#     else:
+#         continue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # WAP to print the mmultiplication table
+
+# # table with for loop
+
+# # n = int(input("Enter the number of table you need: "))
+# # for i in range(1,11):
+# #     print(f"{n} x {i} = {n*i}")
+
+
+
+# # table with while loop
+
+# n = int(input("Enter the number of table you need: "))
+# i = 1
+# while(i<=10):
+#     print(f"{n} x {i} = {n*i}")
+#     i+=1
+
+
+
+
+
+
+
+
+
+# # WAP to print table 
+
+# n = int(input("Enter a number: "))
+
+# table = [i*n for i in  range(1,11)]
+
+# k = range(1,11)
+# for j in table:
+#    print(f"{j}")
+# #    print(f"{n} x {k} = {j} " )
+
+
+
+
+
+
+
+
+
+
+
+
+
 # #WAP using func to convert celsius to fahrenheit
 
 # #c/5 = (f-32)/9
@@ -111,9 +181,6 @@
 # print(f"Square of {num} is {calc.square(num)}")
 # print(f"Cube of {num} is {calc.cube(num)}")
 # print(f"Square Root of {num} is {calc.square_root(num)}")
-
-
-
 
 
 
@@ -354,3 +421,231 @@
 # empl = Employee(12000,20)
 # empl.show()
 
+
+
+
+
+
+
+
+
+
+
+
+
+# #WAP to sum up and multiply the complex numbers
+
+# class Complex:
+#     def __init__(self, r, i):
+#         self.r = r
+#         self.i = i 
+
+#     def __add__(self, c2):
+#         return Complex(self.r + c2.r, self.i + c2.i)
+    
+#     def __mul__(self, c2):
+#         # (a+bi)*(c+di) = (ac-bd) + (ad+bc)i
+#         real = self.r * c2.r - self.i * c2.i
+#         imag = self.r * c2.i + self.i * c2.r
+#         return Complex(real, imag)
+
+#     def __str__(self):
+#         return f"{self.r} + {self.i}i"
+
+# # Example usage
+# c1 = Complex(2, 3)
+# c2 = Complex(4, 5)
+# sum_result = c1 + c2
+# mul_result = c1 * c2
+# print(f"Sum: {sum_result}")
+# print(f"Product: {mul_result}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# #WAP to guess a number
+
+# import random 
+
+# n = int(random.randint(1,101))
+# num = int(input("Guess a Number:"))
+# if (num!=n):
+#     count = 0
+#     while(num!=n):
+#         num = int(input("Please again guess a number: "))
+#         count += 1
+#         if(num > n):
+#             print(f"Higher Number!")
+#         elif(num < n):
+#             print(f"Lower Number!")
+#         else:
+#             print(f"You tried number {n} totally {count} times.")
+#             break
+# elif(num == n):
+#     print("YOU WON!")
+
+# else:
+#     print("\tERROR!\tERROR!\tERROR!Invalid Syntax!\tERROR!\tERROR!\tERROR!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+# #WAP open the files read file, if not exist then except the error 
+
+# try:
+#     with open("file1.txt","r") as f:
+#         print(f.read())
+
+# except FileNotFoundError as e:
+#     print(e)
+
+# try:
+#     with open("file2.txt","r") as f:
+#         print(f.read())
+
+# except FileNotFoundError as e:
+#     print(e)
+
+# try:
+#     with open("file3.txt","r") as f:
+#         print(f.read())
+        
+# except FileNotFoundError as e:
+#     print(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# #WAP to print 3rd, 5th or 7th element of a list using enumerate function
+
+# list_name = ["Rohan", "Gupta", "is", "a", "good","programmer", "and", "a", "good", "friend"]
+# i_value = [3, 5, 7]
+# for index, value in enumerate(list_name):
+#     if index in i_value:
+#         print(f"Element at index {index} is {value}")
+#     else: 
+#         continue
+
+
+
+
+
+# list_name = ["Rohan", "Gupta", "is", "a", "good","programmer", "and", "a", "good", "friend"]
+# i_value = [3, 5, 7]
+# for index, value in enumerate(list_name):
+#     if index in i_value:
+#         print(f"Element is in index {index}")
+#     else: 
+#         continue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # WAP to print triangle star * like:-
+# # *
+# # **
+# # ***
+# # ****
+
+# n =int(input())
+# i =1
+# while(i<=n):
+#     j=1
+#     while(j<=i):
+#         print("*",end="")
+#         j+=1
+#     print()
+#     i+=1
+
+
+# # n = int(input("Enter: "))
+# # for i in range(n):
+# #     for j in range(i+1):
+# #         print("*",end="")
+# #     print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # WAP to print pattern:-
+
+# # * * *
+# # * * *
+# # * * *
+
+
+
+# # n = int(input("Enter: "))
+# # i = 1
+# # while(i<=n):
+# #     j = 1
+# #     while(j<=n):
+# #         print("*",end=" ")
+# #         j+=1
+# #     print()
+# #     i+=1
+
+# n = int(input("Enter:"))
+# for i in range(n):
+#     for j in range(n):
+#         print("*",end=" ")
+#         j+=1
+#     print()
+#     i+=1
