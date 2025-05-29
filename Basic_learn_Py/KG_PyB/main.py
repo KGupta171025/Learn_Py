@@ -42,9 +42,16 @@
 
 
 
+# # taking input in variables
+
+# a = input()
+# print(a)
 
 
+# #taking multiple inputs
 
+# a,b = map(input().split())
+# print(a,b)
 
 
 
@@ -74,6 +81,9 @@
 
 
 
+# str1 = "hello"
+# str2 = "world"
+# print(str1<str2)      # It prints True
 
 
 
@@ -94,7 +104,7 @@
 # # 2st explain
 
 # print("a")
-# print(dic[45])
+# print(dic[56])
 
 
 
@@ -190,7 +200,7 @@
 
 
 
-# # #                     #Modules in python
+# # #                          #Modules in python
 
                 # #Module like flask,django,pyjokes,pandas,requests
 
@@ -217,7 +227,7 @@
 
 
 
-# #                       Loops:- for, while
+# #                               Loops:- for, while
 
 # # For loop example
 # for i in range(1, 6):
@@ -237,6 +247,15 @@
 
 
 
+# # Conditional statement with loop
+
+# for i in range(10):
+#    if i == 7:
+#       break                # in replace of break also use exit() function
+#    elif i == 3:
+#       continue
+#    else:
+#       print(i)
 
 
 
@@ -247,7 +266,82 @@
 
 
 
-# #                       Nested Loops
+
+
+
+#                                          Nested while and for loop
+
+#  Nested while:-
+
+
+# i = 1
+# while(i<5):
+#    while(i<5):
+#       print(i)
+#       i+=1
+#    print(i)
+#    i+=1
+
+
+
+
+# i = 1
+# while(i<10):
+#    while(i<5):
+#       print("inner loop",i)
+#       i+=1
+#    print("outer loop",i)
+#    i+=1
+
+
+
+
+# # Doubt
+
+# j=i = 1                             # Output:  1 2 3 4 1 2 3 4       #Reason is due to the value of j can't be reset from last value of j = 4, when it again comes to loop 
+# while(i<5):
+#    while(j<5):
+#       print(j,end=" ")
+#       j+=1
+#    print(i,end=" ")
+#    i+=1
+
+
+
+
+
+# i=j=1
+# while(i<5):
+#     while(j<5):
+#       print(i,j)
+#       i+=1
+#       j+=1
+
+
+
+
+
+
+
+# i=j = 1
+# while(i<10):
+#     while(j<10):
+#         print(j,end="")
+#         print(i)
+#         j+=1
+#     i+=1
+
+
+
+
+
+
+
+
+
+
+
+# #                            Nested Loops
 
 # # Nested for loop example
 # for i in range(1, 4):
@@ -282,7 +376,7 @@
 
 
 
-# # #                     #Functions in python
+# # #                                         #Functions in python
 
 
 
@@ -329,19 +423,12 @@ User defined functions are those which are defined by user
 
 
 
-# #                     #Built in functions
+# #                                    #Built in functions
 
 
 
 
-#                     # Functions 
-
-
-# a = 12 
-# b= 45
-# c= 32
-# average = (a+b+c)/3
-# print(average)
+#                                           # Functions 
 
 
 # a = 12 
@@ -351,8 +438,15 @@ User defined functions are those which are defined by user
 # print(average)
 
 
+# a = 12 
+# b= 45
+# c= 32
+# average = (a+b+c)/3
+# print(average)
 
-# #                     #so we use here functions
+
+
+# #                         #so we use here functions
 
 
 # def avg():       #Function definition
@@ -369,7 +463,7 @@ User defined functions are those which are defined by user
 # avg()
 
 
-                            #OR WE ALSO USE FUNCTION WITH return as
+                                #OR WE ALSO USE FUNCTION WITH return as
 
 
 
@@ -393,10 +487,10 @@ User defined functions are those which are defined by user
 
 
 
-# #                     #User defined functions
+# #                                      #User defined functions
 
 
-#                               RECURSION
+#                                            RECURSION
 # #Recursion is a process in which a function calls itself directly or indirectly.
 
 
@@ -481,7 +575,7 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # #                     #Data types in python
+# # #                                       # Data types in python
 
 
 
@@ -621,8 +715,8 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-#                           #OOP in python
-# # #                     #Classes and objects
+#                                              # OOP in python
+# # #                                        # Classes and objects
 
 # class Dog:
 
@@ -686,8 +780,11 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# #                     #Inheritance
-## Inheritance is a mechanism in object-oriented programming that allows a new class (child class) to inherit
+#                           #                     #Inheritance
+
+
+
+# # Inheritance is a mechanism in object-oriented programming that allows a new class (child class) to inherit
 
 # class Animal:
 
@@ -790,7 +887,7 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # super()
+#                                          # super()
 
 # class Employee:
 #     def __init__(self):
@@ -831,7 +928,9 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # @classmethod
+#                                                # @classmethod
+
+
 
 
 # class Employee:
@@ -856,7 +955,45 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # @proeperty, @name.setter, getter, setter
+# #                              # @proeperty, @name.setter, getter, setter
+
+
+
+
+
+
+
+# class Meth:
+#     a =2
+#    #  @classmethod
+#     def som(cls):
+#         return cls.a
+
+# samp = Meth()
+# samp.a=1
+# print(samp.som())
+
+
+
+
+# @property -> @name.getter -> getName()
+
+# class Test{
+# 	int a;
+  
+#   int getA() {
+#   	return a;
+#   }
+  
+#   void setA(int b) {
+#    a = b;
+#   }
+# }
+
+
+
+
+
 
 
 # class employee:
@@ -881,7 +1018,7 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 # e.show()
 
 # e.name = "Rohan Gupta"
-# print(e.lname)
+# print(e.name)
 
 
 
@@ -890,7 +1027,11 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # #                     Operator overloading
+# # #                                         Operator overloading
+
+
+
+
 # # # Operator overloading allows us to define how operators behave for user-defined classes.
 
 # class Number:
@@ -916,7 +1057,12 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # #                     #Polymorphism
+# # #                                               #Polymorphism
+
+
+
+
+
 # #Polymorphism is the ability of different classes to be treated as instances of the same class through a common interface. It allows methods to do different things based on the object it is acting upon, even if they share the same method name.
 
 
@@ -967,7 +1113,11 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # #                        #Encapsulation  
+# # #                                                #Encapsulation  
+
+
+
+
 # # Encapsulation is the concept of bundling data (attributes) and methods (functions) that operate on the data into a single unit, or class.
 
 
@@ -1033,7 +1183,11 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 
 
 
-# # #                     #Abstraction
+# # #                                               #Abstraction
+
+
+
+
 # ## Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object.
 
 
@@ -1079,7 +1233,18 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 # # The `Shape` class serves as a blueprint for all shapes, ensuring that any shape must implement the `area` and `perimeter` methods.
 
 
-# # #                     #Modules and Packages
+
+
+
+
+
+
+
+# # #                                    #Modules and Packages
+
+
+
+
 # # A module is a file containing Python code, which can define functions, classes, and variables.
 # # A package is a collection of modules in directories that give a package hierarchy.
 
@@ -1135,5 +1300,583 @@ factorial(5) = 5 * factorial(4) = 5 * 4 * factorial(3) = 5 * 4 * 3 * factorial(2
 # # - Packages organize modules in directories.
 # # - Use pip to install third-party packages.
 
+
+
+
+
+
+
+
+
+# #                                      WALRUS OPERATOR(:=)
+
+
+# if (n:=len([1, 4,56,89,9]))>3:
+#    print(f"the toatal number of elements is {n} which is much higher than")
+
+# #Output: the toatal number of elements is 5 which is much higher than
+    
+
+
+# if (n:=len([1, 4,56,89,9])>3):
+#    print(f"the toatal number of elements is {n} which is much higher than")
+
+# #Output: the toatal number of elements is True which is much higher than due to brackets in if condition
+
+
+
+
+
+
+
+
+
+# #                                            Types Definition(:)
+
+# a : int = 232
+
+# name : str = "Krishna"
+
+
+# def sum(a:int, b:int) -> int:
+#    return a+b
+
+# print(sum(2,4))         # while using the types defintion the user or developer can easily able to understand the input and output type
+#                         #like this shows when it want to access the sum() function     (a: int, b: int) -> int
+
+
+
+
+
+
+
+
+
+
+#                         # Advanced Type Hints
+
+
+
+# from typing import List, Tuple, Union, Dict
+
+# numbers : List[int] = [1,2,4,5,8]
+
+# persons : Tuple[str] = ("Rohan", "Krishna", "Manas", "Gopal")
+
+# persons : Tuple[int, str] = ("Jyoti", 43)
+# persons : Tuple[str, int] = ("Jyoti", 43)       #Can be visa versa in any types
+
+
+# scores : Dict[str, int] = {"Manav": 39,"Naman":23,"Himanshu": 45}
+
+# identifier : Union[str, int ] = "IUF235"
+
+
+
+
+
+
+#                                      # Match Case (like the cpp or C++)
+
+
+# def http_status(status):
+#    match status:
+#       case 202:
+#          return "OK"
+#       case 404:
+#          return "Not found!"
+#       case 500:
+#          return "Internal Server Error!"
+#       case _:
+#          return "Unknown Status"
+
+
+# status = int(input("Error Code: "))
+# print(http_status(status))
+
+
+
+
+
+
+
+
+
+#                                               # Merged Dictionary (|)
+
+
+# dict1 = {"Rohan":16, "Krishna": 19, "Manas":25}
+# dict2 = {"Mohini": 15,"Sakhi": 18, "Khushi":20 }
+
+
+# merged = dict1 | dict2
+
+# print(merged)
+
+
+
+
+
+
+
+
+#                                        # File context using (with)
+
+# with open("sample.py","r") as ps:
+#    # print(ps.readlines())
+   
+   
+   
+#    for line in ps.readlines():
+#       print(line,end="Krishna")               end keyword aways consider next line as \n in file like as same with others in end keyword case
+
+
+
+
+
+# print("nufeoe nmf",end="@\n")
+
+# print("Krishna")
+
+
+
+
+
+
+
+# #                                      dir() Function used for see all the attributes and methods of a module or class
+
+
+# import math
+# print(dir(math),end="\n") 
+
+
+
+
+
+
+
+# #                                         Try and Except Block
+
+# try:
+#     n = int(input("Enter a number: "))
+#     print(f"You entered: {n}")
+# except Exception as e:
+#    print(f"An error occurred: {e}")
+
+
+
+
+
+
+
+
+
+#                                              #  OR
+
+
+
+# try:
+#     n = int(input("Enter a number: "))
+#     print(f"You entered: {n}")
+
+# except ValueError as e:
+#     print(f"Invalid input! Please enter a valid integer. Error: {e}")
+
+# except Exception as e:
+#     print(f"An unexpected error occurred: {e}")
+
+
+
+
+
+
+
+
+
+
+# #                                        try with else
+
+
+
+
+
+# try:
+#       n = int(input("Enter a number: "))
+#       print(f"You entered: {n}")
+
+# except Exception as e:
+#    print(f"An error occurred: {e}")
+
+
+# else:                                                       #it goes under the else block when the try block runs successfully
+#      print("I am inside the else block.")
+
+
+
+
+
+
+
+
+
+#                                              try with finally
+
+
+
+
+
+# try:
+#       n = int(input("Enter a number: "))
+#       print(f"You entered: {n}")
+
+# except Exception as e:
+#    print(f"An error occurred: {e}")
+
+
+# finally:                                             #the block of code of finally will always execute whether the try  or exception blocks runs successfully or not. If its better to use as normal as print but here's the twist it much better understandable inside the function usage let's see
+#      print("I am inside the else block.")
+
+
+
+
+
+#The block of code of finally will always execute whether the try  or exception blocks runs successfully or not. If its better to use as normal as print but here's the twist it much better understandable inside the function usage let's see
+
+#it also work as same as using finally keyword
+
+
+
+
+# try:
+#       n = int(input("Enter a number: "))
+#       print(f"You entered: {n}")
+
+# except Exception as e:
+#    print(f"An error occurred: {e}")
+
+
+# print("I am inside the else block.")
+
+
+
+#But the difference arriase in functions 
+
+
+
+
+# def main():             #We use finally as like it differ without the finally when we added the return and there's no finally keywork
+#    try:
+#       n = int(input("Enter a number:"))
+#       print(f"You entered: {n}")
+
+#    except Exception as e:
+#       print(f"An error occurred: {e}")
+
+#    finally:
+#        print("I am inside the finally block of code.")
+
+
+
+# main()
+
+
+
+
+
+
+
+
+
+
+# #                           Use finally in presence of return statement
+
+
+
+# def main():
+#    try:
+#       n = int(input("Enter a number:"))
+#       print(f"You entered: {n}")
+#       return
+
+#    except Exception as e:
+#       print(f"An error occurred: {e}")
+#       return
+   
+#    finally:
+#       print("I am inside the finally block of code.")
+
+# main()
+
+
+
+
+
+
+
+# def main():
+#    try:
+#       n = int(input("Enter a number:"))
+#       print(f"You entered: {n}")
+#       return
+
+#    except Exception as e:
+#       print(f"An error occurred: {e}")
+#       return
+#    print("I am inside the finally block of code.")
+
+# main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# #                                               Raise Error
+
+
+
+# a = int(input("Enter a number:"))
+# b = int(input("Enter a number:"))
+# print(a/b)        # lets a = 5 and b = 0 so it will raise ZeroDivisionError: division by zero
+
+
+# #                                          So for this we use the raise keyword to raise an error if b is 0
+
+
+# a = int(input("Enter a number:"))
+# b = int(input("Enter a number:"))
+# if (b == 0):
+#     raise ZeroDivisionError("Division by zero is not allowed!")
+# else:
+#     print(f"The result of {a} divided by {b} is: {a / b}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+# #                                 __name__ == "__main__":
+
+
+# # from module import func
+
+
+# #using module.py file
+
+
+
+# from module import func
+
+
+# # This ensures func() runs only when main.py is executed directly, not when imported as a module.
+
+
+
+
+
+
+
+
+
+
+
+#                                                    # Global keyword
+# # a = 23
+
+# # def func():
+   
+# #    a = 2
+# #    print(a)
+# # func()
+# # print(a)
+
+
+
+
+
+# def func():
+#    global a  # This allows us to modify the global variable 'a' inside this function
+#    a = 2
+#    print(a)
+# a = 23
+# # print(a)
+
+# func()
+# print(a)
+
+
+
+
+
+
+# #                                            Enumerate Function
+
+# # l = ["Rohan", "Krishna", "Manas", "Gopal"]
+
+# # index = 0
+# # for item in l:
+# #     print(f"The value present at {index} index is {item}")
+# #     index += 1
+
+
+
+
+### It becomes much easier using enumerate function 
+
+
+# l = ["Rohan", "Krishna", "Manas", "Gopal"]
+
+# for index,item in enumerate(l):
+#     print(f"The value present at {index} index is {item}")
+#     index += 1
+
+
+
+
+#                                              List Comprehension
+
+# list1 = [1,2,3,4,5,6,7,8,9,10]
+# sqlist = []
+# for i in list1:
+#    sqlist.append(i*i)
+
+
+# print(sqlist)
+
+
+
+
+# list1 = [1,2,3,4,5,6,7,8,9,10]
+# sqlist = [i*i for i in list1]
+# print(sqlist)
+
+
+
+
+
+
+
+
+
+# #                                              *args and **kwargs
+
+
+# # def plus(a,b,c):
+# #     result = a + b + c
+# #     return result
+
+# # print(plus(1,2,3))   # They print the output but
+
+# # print(plus(1,2))
+# # print(plus(1,2,3,4))  # It will give an error because it only takes 3 arguments
+
+
+
+# # So for this we use *args 
+
+
+# def plus(*args):
+#     result = sum(args)
+#     return result
+
+
+# print(plus(1,2,3))   # They print the output as well as 
+
+# print(plus(1,2))
+# print(plus(1,2,3,4))  # It will give not produce any  error because args instead of specified the arguments the args in fucnion they works properly
+
+
+
+
+
+
+
+
+
+
+
+
+# #                                   Difference between is and ==
+
+
+
+
+# # #Lets frstly use in list
+
+
+
+# # a = [1,2,3]
+# # b = [1,2,3]
+
+# # print(f"a: {id(a)}")       ## Output: Memory location of a
+# # print(f"b: {id(b)}")       ## Output: Memory location of b
+
+
+# # print(a == b)  # Output: True, because the values are equal
+# # print(a is b)  # Output: False, because they are different objects in memory location
+
+
+
+# #Lets use it in tuples
+
+
+
+# a = (1,2,3)
+# b = (1,2,3)
+
+# print(f"a: {id(a)}")       ## Output: Memory location of a
+# print(f"b: {id(b)}")       ## Output: Memory location of b
+
+
+# print(a == b)  # Output: True, because the values are equal
+# print(a is b)  # Output: True, because they are the same object in memory location (tuples are immutable and Python optimizes memory usage for them)
+
+
+
+
+
+
+
+# #                                   Usage of map function map()
+
+
+
+
+# # list1 = [1,2,3,34,655,56]
+# # def double(num):
+# #     return num * 2
+
+# # print(map(double, list1))
+# # print(list(map(double, list1)))
+
+
+
+
+
+
+# tuple1 = (1,2,3,34,655,56)
+# def double(num):
+#     return num * 2
+
+# print(map(double, tuple1))
+# print(tuple(map(double, tuple1)))
 
 
